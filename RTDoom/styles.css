@@ -6,3 +6,4 @@
 .brand small{font-size:10px;letter-spacing:.2px;line-height:1.45;max-width:min(380px,calc(100vw - 110px));margin-top:4px}
 
 video{display:block;width:100%;height:auto;background:#000}.gallery-section{padding-block:65px 20px}.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.gallery-card{border:1px solid var(--line);background:var(--panel)}.gallery-card figcaption{padding:18px 20px}.gallery-card .eyebrow{display:block;margin:0 0 9px;color:var(--amber);font-size:9px}.gallery-card h3{font-size:22px;margin:0}.gallery-card img{aspect-ratio:16/9;object-fit:cover}@media(max-width:760px){.gallery-section{padding-top:40px}.gallery-grid{grid-template-columns:1fr;gap:22px}}
+.coming-soon:disabled{cursor:default;background:var(--panel);color:var(--muted);border:1px solid var(--line)}
