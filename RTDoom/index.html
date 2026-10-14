@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10161a">
+  <meta name="description" content="RTDoom is a free Doom engine project with Vulkan ray-traced lighting, reflections, integrated visual styles and simple fog. See stock Doom captures and the new RT settings.">
+  <title>RTDoom — Doom, in a new light</title>
+  <link rel="icon" href="assets/rtdoom.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap site-header">
+    <a class="brand" href="#" aria-label="RTDoom home"><img src="assets/rtdoom.svg" width="44" height="44" alt=""><span>RT<span class="light">Doom</span><small>A modified UZDoom 5.0 engine with RayTracing and FSR3.1 Upscaling</small></span></a>
+    <nav aria-label="Main navigation"><a href="#gallery">Gallery</a><a href="#effects">In motion</a><a href="#settings">Settings</a><a class="nav-status" href="#release">Release status ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> VULKAN RAY TRACING · IN DEVELOPMENT</p>
+        <h1>Doom,<br>in a <em>new light.</em></h1>
+        <p class="lead">Light that bounces. Reflections that belong to the world. The Doom you know, with a new renderer.</p>
+        <p class="intro">RTDoom brings ray-traced lighting together with built-in visual styles, readable darkness and atmospheric fog. Keeping Doom mod compatibility is a central development goal.</p>
+        <div class="hero-actions"><a class="button" href="#effects">See the effects <span aria-hidden="true">↓</span></a><a class="text-link" href="#settings">Explore the RT settings →</a></div>
+        <p class="capture-note">Real game captures. Stock Doom II. No model replacements.</p>
+      </div>
+      <figure class="hero-visual">
+        <button class="image-button" data-enlarge="assets/underhalls-night.webp" data-caption="MAP02 · Underhalls — native reference preview, 1920 × 1080" aria-label="Enlarge the stock Doom screenshot"><img src="assets/underhalls-night.webp" width="1920" height="1080" alt="Underhalls with red lighting, reflective blue water and deep shadows." fetchpriority="high"></button>
+        <figcaption class="frame-label"><span>MAP02 / UNDERHALLS</span><span>1920 × 1080 · FSR QUALITY</span></figcaption>
+        <p class="visual-note">Original Doom worlds. Native ray tracing.</p>
+      </figure>
+    </section>
+    <section class="principles wrap" aria-label="What changes">
+      <div><span class="number">01</span><h2>Real light</h2><p>Torches, lamps and emissive surfaces feed the RT renderer. Bounced light carries their color into the surrounding world.</p></div>
+      <div><span class="number">02</span><h2>World reflections</h2><p>Ray-traced reflections remain part of every RT preset. Built-in controls tune floor and liquid materials.</p></div>
+      <div><span class="number">03</span><h2>Your atmosphere</h2><p>Gentle distant haze by default. Optional shadowed light shafts, mild fog drift, color and darkness controls.</p></div>
+    </section>
+    <section class="wrap gallery-section" id="gallery">
+      <div class="section-heading"><div><p class="eyebrow">SIX MORE WORLDS TO EXPLORE</p><h2>Water. Windows.<br><span>Light after dark.</span></h2></div><p>Each view comes from a different Doom II map. Click a screenshot to see the full 1080p capture.</p></div>
+      <div class="gallery-grid">
+        <figure class="gallery-card"><button class="image-button" data-enlarge="assets/gantlet-water.webp" data-caption="MAP03 · The Gantlet — Blue water. Green light." aria-label="Enlarge The Gantlet"><img src="assets/gantlet-water.webp" width="1920" height="1080" loading="lazy" alt="Reflective water beneath the bridge, with green and blue lamps."></button><figcaption><span class="eyebrow">MAP03 / THE GANTLET</span><h3>Blue water. Green light.</h3></figcaption></figure>
+        <figure class="gallery-card"><button class="image-button" data-enlarge="assets/inmost-dens.webp" data-caption="MAP14 · The Inmost Dens — Water and stone windows." aria-label="Enlarge The Inmost Dens"><img src="assets/inmost-dens.webp" width="1920" height="1080" loading="lazy" alt="Blue water beneath stone windows and a raised walkway."></button><figcaption><span class="eyebrow">MAP14 / THE INMOST DENS</span><h3>Water and stone windows.</h3></figcaption></figure>
+        <figure class="gallery-card"><button class="image-button" data-enlarge="assets/industrial-windows.webp" data-caption="MAP15 · Industrial Zone — Windows into the city." aria-label="Enlarge Industrial Zone"><img src="assets/industrial-windows.webp" width="1920" height="1080" loading="lazy" alt="Outdoor architecture, building windows and distant haze."></button><figcaption><span class="eyebrow">MAP15 / INDUSTRIAL ZONE</span><h3>Windows into the city.</h3></figcaption></figure>
+        <figure class="gallery-card"><button class="image-button" data-enlarge="assets/abandoned-mines.webp" data-caption="MAP26 · The Abandoned Mines — Lava lights the depths." aria-label="Enlarge The Abandoned Mines"><img src="assets/abandoned-mines.webp" width="1920" height="1080" loading="lazy" alt="Red lava and raised walkways in the mines."></button><figcaption><span class="eyebrow">MAP26 / THE ABANDONED MINES</span><h3>Lava lights the depths.</h3></figcaption></figure>
+        <figure class="gallery-card"><button class="image-button" data-enlarge="assets/bloodfalls.webp" data-caption="MAP25 · Bloodfalls — Color in the darkness." aria-label="Enlarge Bloodfalls"><img src="assets/bloodfalls.webp" width="1920" height="1080" loading="lazy" alt="Red and green illumination across platforms and barrels."></button><figcaption><span class="eyebrow">MAP25 / BLOODFALLS</span><h3>Color in the darkness.</h3></figcaption></figure>
+        <figure class="gallery-card"><button class="image-button" data-enlarge="assets/spirit-fog.webp" data-caption="MAP28 · The Spirit World — A darker kind of atmosphere." aria-label="Enlarge The Spirit World"><img src="assets/spirit-fog.webp" width="1920" height="1080" loading="lazy" alt="Green torches, a glowing red opening and fog in a dark cavern."></button><figcaption><span class="eyebrow">MAP28 / THE SPIRIT WORLD</span><h3>A darker kind of atmosphere.</h3></figcaption></figure>
+      </div>
+    </section>
+    <section class="wrap effects-section" id="effects">
+      <div class="section-heading"><div><p class="eyebrow">DOOM II, IN MOTION</p><h2>Small moments.<br><span>Different atmosphere.</span></h2></div><p>Two more maps, captured at 1080p with FSR Quality upscaling. These short recordings show the development reference preview.</p></div>
+      <article class="effect-row"><figure><video width="1920" height="1080" autoplay muted loop playsinline controls preload="metadata" poster="assets/lighting-poster.webp" aria-label="Weapon lighting in Dead Simple"><source src="assets/lighting.mp4" type="video/mp4"></video><figcaption class="frame-label"><span>WEAPON LIGHT + REFLECTIONS</span><span>MAP07 / DEAD SIMPLE</span></figcaption></figure><div class="effect-copy"><p class="eyebrow">LIGHT IN THE WORLD</p><h3>A shot lights the arena.</h3><p>Weapon flashes, lamps and bright surfaces participate in the renderer’s lighting. Illumination and reflections respond as the view moves.</p><p class="detail">Native Vulkan ray tracing, with FSR 3.1 upscaling. Frame generation is off in these captures.</p></div></article>
+      <article class="effect-row reverse"><figure><video width="1920" height="1080" autoplay muted loop playsinline controls preload="metadata" poster="assets/shafts-poster.webp" aria-label="Water and atmosphere in The Waste Tunnels"><source src="assets/shafts.mp4" type="video/mp4"></video><figcaption class="frame-label"><span>WATER + ATMOSPHERE</span><span>MAP05 / THE WASTE TUNNELS</span></figcaption></figure><div class="effect-copy"><p class="eyebrow">ATMOSPHERE AND REFLECTIONS</p><h3>Below the surface.</h3><p>Water catches the room’s light while fog adds depth to the tunnels. Color, density and drift can be adjusted in the client.</p><p class="detail">Optional volumetric lighting costs more than distant haze. The updated renderer uses a smaller fog grid to reduce that work.</p></div></article>
+    </section>
+    <section class="wrap settings-section" id="settings">
+      <div class="section-heading"><div><p class="eyebrow">BUILT INTO THE CLIENT</p><h2>RT Presets.<br><span>One place to tune the look.</span></h2></div><p>Open <strong>Options → RT Presets</strong> for rendering quality, visual styles, lighting, darkness and fog. The integrated features no longer need SuperShadersSuiteRT in the addon list.</p></div>
+      <div class="settings-tabs" role="tablist" aria-label="RT settings screenshots">
+        <button id="tab-presets" role="tab" aria-selected="true" aria-controls="settings-panel" data-image="presets.webp" data-caption="RT Presets — the main RT options menu">RT Presets</button>
+        <button id="tab-fog" role="tab" aria-selected="false" aria-controls="settings-panel" tabindex="-1" data-image="fog.webp" data-caption="Fog — outdoor haze, interior mist, light shafts, color and mild drift">Fog &amp; shafts</button>
+        <button id="tab-lighting" role="tab" aria-selected="false" aria-controls="settings-panel" tabindex="-1" data-image="lighting-settings.webp" data-caption="Lighting and reflections — built-in visual controls">Lighting &amp; reflections</button>
+      </div>
+      <figure id="settings-panel" role="tabpanel" aria-labelledby="tab-presets" tabindex="0">
+        <button id="settings-preview" class="image-button" data-enlarge="assets/presets.webp" data-caption="RT Presets — the main RT options menu" aria-label="Enlarge the RT settings screenshot"><img id="settings-image" src="assets/presets.webp" width="1920" height="1080" loading="lazy" alt="RT Presets — the main RT options menu"></button>
+        <figcaption id="settings-caption" class="frame-label">RT PRESETS / NATIVE CLIENT MENU</figcaption>
+      </figure>
+      <div class="settings-notes"><p><strong>Quality choices</strong><br>Native, Quality, Performance and 60 FPS Target. Bounced lighting and reflections stay enabled; the presets adjust rendering resolution and ray depth.</p><p><strong>A cleaner image</strong><br>FSR 3.1 upscaling and a Clean image option. Integrated styles remain available when you want a different look.</p><p><strong>Performance matters</strong><br>Default haze skips the volumetric ray and 3D integration work used by shafts. Frame rate still depends on hardware, maps and combat.</p></div>
+    </section>
+    <section class="wrap release-section" id="release">
+      <div><p class="eyebrow">FREE PROJECT · RELEASE IN PREPARATION</p><h2>Built for playing Doom.</h2><p class="lead">A public build is being prepared.</p><p>RTDoom is a community engine project, free to use. The current development checkpoint is backed up privately. Downloads and corresponding source will be linked here when the release is ready. This public repository contains website files only.</p><p>No game data is bundled. You will need your own compatible Doom IWAD, 64-bit Windows and a GPU with Vulkan ray-tracing support.</p></div>
+      <aside class="release-note"><span class="status-dot"></span><h3>What is being checked</h3><ul><li>Lighting and material behavior across maps</li><li>Mod compatibility and saves</li><li>Performance during movement and combat</li><li>Packaging and source availability</li></ul><a class="text-link" href="https://github.com/RENEGADE-ANDROiD/RENEGADE-ANDROiD.github.io">Website repository ↗</a></aside>
+    </section>
+  </main>
+  <footer class="wrap"><span class="footer-brand">RTDoom <span>/</span> RENEGADE-ANDROiD</span><p>Built on the ZDoom / GZDoom / UZDoom lineage and RTGL / GZDoom RT. Integrated visual features credit CynicGames’ SuperShadersSuite. Doom and its artwork belong to their respective owners.</p><a href="credits.html">Credits &amp; project notes ↗</a></footer>
+  <dialog id="image-dialog"><div class="dialog-top"><p id="dialog-caption"></p><button id="close-dialog" type="button">Close ×</button></div><img id="dialog-image" alt=""></dialog>
+</body>
+</html>
+

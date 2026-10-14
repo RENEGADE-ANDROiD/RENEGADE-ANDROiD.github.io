@@ -1,0 +1,74 @@
+[
+  {
+    "asset": "underhalls-night",
+    "map": 2,
+    "title": "Underhalls",
+    "cursor": false
+  },
+  {
+    "asset": "gantlet-water",
+    "map": 3,
+    "title": "The Gantlet",
+    "cursor": false
+  },
+  {
+    "asset": "inmost-dens",
+    "map": 14,
+    "title": "The Inmost Dens",
+    "cursor": false
+  },
+  {
+    "asset": "industrial-windows",
+    "map": 15,
+    "title": "Industrial Zone",
+    "cursor": false
+  },
+  {
+    "asset": "abandoned-mines",
+    "map": 26,
+    "title": "The Abandoned Mines",
+    "cursor": false
+  },
+  {
+    "asset": "bloodfalls",
+    "map": 25,
+    "title": "Bloodfalls",
+    "cursor": false
+  },
+  {
+    "asset": "spirit-fog",
+    "map": 28,
+    "title": "The Spirit World",
+    "cursor": false
+  },
+  {
+    "asset": "lighting",
+    "map": 7,
+    "title": "Dead Simple",
+    "cursor": false
+  },
+  {
+    "asset": "shafts",
+    "map": 5,
+    "title": "The Waste Tunnels",
+    "cursor": false
+  },
+  {
+    "asset": "presets",
+    "map": 8,
+    "title": "Tricks and Traps",
+    "cursor": false
+  },
+  {
+    "asset": "fog",
+    "map": 17,
+    "title": "Tenements",
+    "cursor": false
+  },
+  {
+    "asset": "lighting-settings",
+    "map": 10,
+    "title": "Refueling Base",
+    "cursor": false
+  }
+]
